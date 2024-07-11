@@ -112,8 +112,8 @@ export class LoginComponent implements OnInit, AfterViewInit {
    * @constructor
    */
   constructor(private router: Router) {
-    localStorage.setItem('uid', '')
     this.checkScreenWidth();
+    localStorage.setItem('uid', '')
     this.loginForm = new FormGroup({
       email: new FormControl('', [Validators.required, Validators.email]),
       password: new FormControl('', [Validators.required, Validators.minLength(8)])
@@ -131,7 +131,6 @@ export class LoginComponent implements OnInit, AfterViewInit {
    * Also, checks the screen width for responsive design.
    */
   ngOnInit() {
-    this.checkScreenWidth();
     const hasSeenAnimation = localStorage.getItem('hasSeenAnimation');
     if (!hasSeenAnimation) {
       this.showIntroAnimation = true;
@@ -195,7 +194,7 @@ export class LoginComponent implements OnInit, AfterViewInit {
     this.delay(1750).then(() => {
       this.logoContainerState = 'final';
     });
-    this.delay(3500).then(() => {
+    this.delay(5000).then(() => {
       this.emailInput.nativeElement.focus();
     });
   }

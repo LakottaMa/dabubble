@@ -132,7 +132,7 @@ export class SidebarComponent implements OnInit {
   /**
    * The function `getDmStatus` returns a CSS class name based on the login status of a user in the
    * sidebar.
-   * @param {number} index - The `index` is a number that represents the position or index of the user 
+   * @param {number} index - The `index` is a number that represents the position or index of the user
    * in the `userDmData` array within the `sidebarService`.
    * @returns returns either 'online-div' or 'offline-div' based on the value
    * of `isLoggedIn` property in the `userDmData` array at the specified index.
