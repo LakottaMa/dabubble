@@ -4,7 +4,6 @@
 /out-tsc
 /bazel-ou
 /environments
-.gitignore
 
 # Node
 /node_modules
@@ -39,6 +38,8 @@ testem.log
 
 
 # System files
+.gitignore
+.gitattributes
 .DS_Store
 Thumbs.db
 
